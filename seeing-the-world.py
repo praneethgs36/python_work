@@ -15,6 +15,3 @@ print(bucket_list)
 
 bucket_list.sort(reverse=True)
 print(bucket_list)
-
-print(bucket_list[4])
-
