@@ -32,7 +32,9 @@ removed_guests_list.append(guest_list[7])  # Add guest at index 7
 
 # Print messages for removed guests
 for removed_guest in removed_guests_list:
-    print(f"Dear {removed_guest},\nDue to financial constraints, I had to cut down on the number of guests. But you are still invited. Please make it to the party!\nRegards,\nPraneeth\n\n")
+    print(f"Dear {removed_guest},\nDue to financial constraints, I had to cut" 
+          "down on the number of guests. But you are still invited." 
+          "Please make it to the party!\nRegards,\nPraneeth\n\n")
 
 
 # del guest_list[0:8]

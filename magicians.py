@@ -4,3 +4,5 @@ for performer in magincians:
     print(f"That was a great trick {performer}!\n")
 
 print("Thank you everyone. That was a great show")
+
+print("hey whatsupp")

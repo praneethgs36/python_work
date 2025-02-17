@@ -1,5 +1,5 @@
-x = "Hello Python World"
+message_ = "Hello Python World"
 print(message_)
 
-x= "Hello Python Crash Course World"
-print(message)
+second_message= "Hello Python Crash Course World"
+print(second_message)
