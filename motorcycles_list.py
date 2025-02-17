@@ -10,10 +10,12 @@ motorcycles_list.insert(1, 'ktm')
 #del motorcycles_list[0]
 # print(motorcycles_list)
 
-# burnt_motorcycle = motorcycles_list.pop(2)
-# print(burnt_motorcycle)
-# print(f"Your {burnt_motorcycle} has exploded. Choose another vehicle from your garage to continue the game. \nChoose one from the following list. ")
-# print(motorcycles_list)
+burnt_motorcycle = motorcycles_list.pop(2)
+print(burnt_motorcycle)
+print(f"""Your {burnt_motorcycle} has exploded. Choose another vehicle from 
+      your garage to continue the game. 
+      \nChoose one from the following list. """)
+print(motorcycles_list)
 
 burnt_scooter = 'ktm'
 motorcycles_list.remove(burnt_scooter)
