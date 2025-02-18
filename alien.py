@@ -28,13 +28,16 @@ alien_0['speed'] = 'medium'
 # The alien is moving to the right.
 # Let's change its position based on its speed. 
 
-if alien_0['speed'] == 'slow':
-    alien_0['x_position'] = alien_0['x_position'] + 1
-elif alien_0['speed'] == 'medium':
-    alien_0['x_position'] = alien_0['x_position'] + 2
-elif alien_0['speed'] == 'fast':
-    alien_0['x_position'] = alien_0['x_position'] + 3
+# if alien_0['speed'] == 'slow':
+#     alien_0['x_position'] = alien_0['x_position'] + 1
+# elif alien_0['speed'] == 'medium':
+#     alien_0['x_position'] = alien_0['x_position'] + 2
+# elif alien_0['speed'] == 'fast':
+#     alien_0['x_position'] = alien_0['x_position'] + 3
 
-print(f"""
-New postion of aliens is ({alien_0['x_position']}, {alien_0['y_position']})
-""")
+# print(f"""
+# New postion of aliens is ({alien_0['x_position']}, {alien_0['y_position']})
+# """)
+
+del alien_0['points']
+print(alien_0)
