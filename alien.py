@@ -1,7 +1,7 @@
 alien_0 = {'color': 'green', 'points': 5}
 
-print(alien_0['color'])
-print(alien_0['points'])
+# print(alien_0['color'])
+# print(alien_0['points'])
 
 # alien_1 = {}
 # alien_1["height"] = """
@@ -40,4 +40,7 @@ alien_0['speed'] = 'medium'
 # """)
 
 del alien_0['points']
-print(alien_0)
+# print(alien_0)
+
+point_value = alien_0.get('points', 'No point value assigned.')
+print(point_value)
