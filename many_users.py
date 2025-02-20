@@ -13,5 +13,10 @@ users = {
 
 for username in users:
     print(f"\nUsername: {username}")
-    full_name = f"{users[first]} {users[last]}"
-    location = users[location]    
+    # print(users[username])
+
+    full_name = (users[username])['first'] + " " + (users[username])['last']
+    print (f"Name: {full_name}")
+    
+    location = (users[username])['location']
+    print(f"Place: {location}")
