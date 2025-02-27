@@ -3,13 +3,16 @@ def format_name(first_name, last_name, middle_name=''):
     full_name = f"{first_name} {middle_name} {last_name}"
     return full_name.title()
 
+
 while True:
-    print("Tell us your name. Enter 'quit' to leave the program. ")
-    f_name = " "
-    if f_name != 'quit':
-        f_name = input("your first name. ")
-        m_name = input("your middle name. Press enter if not applicable. ")
-        l_name = input("your last name. ")
-        print(f"Hello, {format_name(f_name, l_name, m_name)}")
-    else:
+    print("Enter your name. Enter 'q' to exit the program at any stage. ")
+    f_name = input("your first name. ")
+    if f_name == 'q':
+        break    
+    m_name = input("your middle name. Just press enter if not applicable. ")
+    if m_name == 'q':
         break
+    l_name = input("your last name. ")
+    if l_name == 'q':
+        break
+    print(f"Hello, {format_name(f_name, l_name, m_name)}")
