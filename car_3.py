@@ -27,9 +27,18 @@ class Car:
         elif mileage < self.odometer_reading:
             print("You can't roll back the reading.")
 
+    def increment_odometer(self, miles):
+        """Add the given amount to odometer reading. Reject subtractions. """
+        if miles >= 0:
+            self.odometer_reading += miles
+        elif miles < 0:
+            print("Your can't roll back the reading. ") 
+
 my_new_car = Car('audi', 'a4', 2024)
 print(my_new_car.get_descriptive_name())
-my_new_car.update_odometer(24)
+my_new_car.update_odometer(23_500)
 my_new_car.read_odometer()
-my_new_car.update_odometer(20)
+my_new_car.increment_odometer(100)
+my_new_car.read_odometer()
+my_new_car.increment_odometer(-1000)
 my_new_car.read_odometer()
