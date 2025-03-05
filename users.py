@@ -43,10 +43,10 @@ class Privileges:
 
     def __init__(self):
         """Initializing privileage attributes. """
-        self.list = ['can add post', 
-                    'can delete post', 
-                    'can ban user',
-                    'can delete the website',
+        self.list = ['- can add post', 
+                    '- can delete post', 
+                    '- can ban user',
+                    '- can delete the website',
                     ]
     def show_privileages(self):
         """Displays the list of privileges. """
@@ -54,22 +54,4 @@ class Privileges:
         for privilege in self.list:
             print(privilege)
 
-admin_0 = Admin('Benedict', 'Cumberbatch', 40, 'Mexico')
-admin_0.privileges.show_privileages()
-
-# user_0 = User('Micheal', 'Keaton', 55, 'United States')
-# user_0.describe_user()
-# user_0.greet_user()
-
-# user_1 = User('Jeff', 'Hardy', 40, 'Australia')
-# user_1.describe_user()
-# user_1.greet_user()
-
-# user_2 = User('David', 'Deutch', 65, 'United Kingdom')
-# user_2.describe_user()
-# user_2.greet_user()
-# user_2.display_login_attempts()
-# user_2.increment_login_attempts()
-# user_2.display_login_attempts()
-# user_2.reset_login_attempts()
-# user_2.display_login_attempts()
+    
