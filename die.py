@@ -12,7 +12,7 @@ class Die:
             outcome.append(randint(1, self.sides))
         print(f"Outcome= {outcome}")
 
-six_die = Die()
-six_die.roll_die()
+twenty_die = Die(20)
+twenty_die.roll_die()
 
 
