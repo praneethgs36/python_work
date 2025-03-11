@@ -1,4 +1,5 @@
 # version ^0.3.0
+
 my_grandma_wallet: address
 author: String[100]
 fib_list: int16[5]
