@@ -1,0 +1,4 @@
+In Python, you can work with different data types like strings, boolaen, arrays, etc. 
+In Python, you can use conditional statements like if, else, and elif. 
+In Python, you can create functions and classes or import these created by someone else. 
+In Python, you can access and manipulate data in text files stored in your computer. 
