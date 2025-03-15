@@ -8,7 +8,8 @@ def count_words(file_location):
     try:
         contents = path.read_text(encoding='utf-8')
     except FileNotFoundError:
-        print(f"{file_location} not found in the given location. ")
+        #print(f"{file_location} not found in the given location. ")
+        pass
     else:
         # count the number of words in the file
         words = contents.split()
