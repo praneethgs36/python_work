@@ -26,7 +26,14 @@ def fund():
 def withdraw():
     pass
 
+@internal
 def _get_eth_to_usd_rate():
     # Address: 0x694AA1769357215DE4FAC081bf1f309aDC325306
     # ABI: 
     pass
+
+@external
+@view
+def get_price() -> int256:
+    price_feed: AggregatorV3Interface = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306)
+    return staticcall price_feed.latestAnswer()
